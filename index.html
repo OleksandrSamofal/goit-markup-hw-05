@@ -25,12 +25,21 @@
         <nav>
           <ul class="site-nav list">
             <li class="item">
-              <a class="link-header current" href="./index.html" class="menu-link">Студія</a>
+              <a
+                class="link-header current"
+                href="./index.html"
+                class="menu-link"
+                >Студія</a
+              >
             </li>
             <li class="item">
-              <a class="link-header" href="./portfolio.html" class="menu-link">Портфоліо</a>
+              <a class="link-header" href="./portfolio.html" class="menu-link"
+                >Портфоліо</a
+              >
             </li>
-            <li class="item"><a class="link-header" href="#" class="menu-link">Контакти</a></li>
+            <li class="item">
+              <a class="link-header" href="#" class="menu-link">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="header-nav list">
@@ -65,9 +74,15 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="button-hero pointer" type="button">
+          <button class="button-hero pointer" type="button" data-modal-open>
             Замовити послугу
           </button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eos vero asperiores molestiae, saepe nesciunt sunt? Eius quaerat molestias, eum delectus, molestiae dolorem libero ad harum assumenda voluptatum vel vitae.</p> -->
+            <button class="btn-close"  data-modal-close></button>
+          </div>
         </div>
       </section>
       <!-- section 2 Наші переваги -->
@@ -111,13 +126,28 @@
           <h2 class="section-three">Чим ми займаємося</h2>
           <ul class="list examples-list">
             <li class="item">
-              <img src="./image/box1.jpg" alt="photo our work1" width="370" />
+              <div class="work-thumb">
+                <img src="./image/box1.jpg" alt="photo our work1" width="370" />
+                <div class="work-label">
+                  <h3 class="workthubm-text">Десктопні додатки</h3>
+                </div>
+              </div>
             </li>
             <li class="item">
-              <img src="./image/box2.jpg" alt="photo our work2" width="370" />
+              <div class="work-thumb">
+                <img src="./image/box2.jpg" alt="photo our work2" width="370" />
+                <div class="work-label">
+                  <h3 class="workthubm-text">Мобільні додатки</h3>
+                </div>
+              </div>
             </li>
             <li class="item">
-              <img src="./image/box3.jpg" alt="photo our work3" width="370" />
+              <div class="work-thumb">
+                <img src="./image/box3.jpg" alt="photo our work3" width="370" />
+                <div class="work-label">
+                  <h3 class="workthubm-text">Дизайнерські рішення</h3>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -422,5 +452,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
