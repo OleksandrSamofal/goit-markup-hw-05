@@ -9,6 +9,7 @@
   --secondary-accent-color: rgba(255, 255, 255, 0.6);
   --active-bgc-button: #188ce8;
   --main-fill: #afb1b8;
+  --secondary-fill: #000000;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -309,26 +310,47 @@ fill: var(--accent-color);
 
 .btn-close {
   position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
   top: 8px;
   right: 8px;
   padding: 0;
-
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--main-white-color);
-  color: var(--main-white-color);
+
+  /* background-color: var(--main-white-color);
+  color: var(--main-white-color); */
 }
 
-.btn-close::before {
+.button-close-icon {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  top: 13px;
+  right: 13px;
+  padding: 0;
+  fill: var(--secondary-fill);
+  border-radius: 50%;
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  background-color: var(--main-white-color);
+  pointer-events: none;
+}
+
+/* .btn-close::before {
   content: " ";
   display: block;
   height: 30px;
   width: 30px;
-  /* outline: 2px solid orangered; */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--main-white-color);
   background-image: url(../image/close.svg);
-}
+} */
 
 .secondary-section {
   background-color: var(--main-bgc-grey);
